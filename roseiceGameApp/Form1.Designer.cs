@@ -63,28 +63,26 @@ namespace roseiceGameApp
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(82, 121);
+            this.label1.Font = new System.Drawing.Font("新細明體", 12F);
+            this.label1.Location = new System.Drawing.Point(83, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 12);
+            this.label1.Size = new System.Drawing.Size(131, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "監聽port";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(82, 173);
+            this.label2.Location = new System.Drawing.Point(83, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 12);
+            this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "label2";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(82, 216);
+            this.label3.Location = new System.Drawing.Point(83, 217);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 12);
+            this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "label3";
             // 
@@ -111,19 +109,17 @@ namespace roseiceGameApp
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(82, 264);
+            this.label4.Location = new System.Drawing.Point(83, 265);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 12);
+            this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 8;
             this.label4.Text = "label4";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(82, 313);
+            this.label5.Location = new System.Drawing.Point(83, 314);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 12);
+            this.label5.Size = new System.Drawing.Size(100, 23);
             this.label5.TabIndex = 9;
             this.label5.Text = "label5";
             // 
