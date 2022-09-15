@@ -45,18 +45,18 @@ namespace roseiceGameApp
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(665, 138);
+            this.button1.Location = new System.Drawing.Point(665, 163);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 22);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(665, 264);
+            this.button2.Location = new System.Drawing.Point(665, 303);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(75, 22);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -72,14 +72,16 @@ namespace roseiceGameApp
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("新細明體", 12F);
             this.label2.Location = new System.Drawing.Point(83, 174);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.label2.Text = "輸入文字";
             // 
             // label3
             // 
+            this.label3.Font = new System.Drawing.Font("新細明體", 12F);
             this.label3.Location = new System.Drawing.Point(83, 217);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
@@ -90,25 +92,26 @@ namespace roseiceGameApp
             // 
             this.textBox1.Location = new System.Drawing.Point(237, 110);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(223, 22);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(237, 163);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(400, 22);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(237, 206);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.Size = new System.Drawing.Size(223, 22);
             this.textBox3.TabIndex = 7;
             // 
             // label4
             // 
+            this.label4.Font = new System.Drawing.Font("新細明體", 12F);
             this.label4.Location = new System.Drawing.Point(83, 265);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 23);
@@ -117,6 +120,7 @@ namespace roseiceGameApp
             // 
             // label5
             // 
+            this.label5.Font = new System.Drawing.Font("新細明體", 12F);
             this.label5.Location = new System.Drawing.Point(83, 314);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 23);
@@ -127,14 +131,14 @@ namespace roseiceGameApp
             // 
             this.textBox4.Location = new System.Drawing.Point(237, 254);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.Size = new System.Drawing.Size(223, 22);
             this.textBox4.TabIndex = 10;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(237, 303);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
+            this.textBox5.Size = new System.Drawing.Size(400, 22);
             this.textBox5.TabIndex = 11;
             // 
             // Form1
