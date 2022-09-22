@@ -7,14 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
 
 namespace roseiceGameApp
 {
     public partial class Form1 : Form
     {
+        UdpClient U;
+        Thread THI;
         public Form1()
         {
             InitializeComponent();
+            this.Text = "IP:" + findhostIP();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -45,12 +45,14 @@ namespace roseiceGameApp
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("新細明體", 9F);
             this.button1.Location = new System.Drawing.Point(665, 163);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 22);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "啟動接收";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -58,7 +60,7 @@ namespace roseiceGameApp
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 22);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "傳送";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -69,6 +71,7 @@ namespace roseiceGameApp
             this.label1.Size = new System.Drawing.Size(131, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "監聽port";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -77,7 +80,7 @@ namespace roseiceGameApp
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 3;
-            this.label2.Text = "輸入文字";
+            this.label2.Text = "接收文字";
             // 
             // label3
             // 
@@ -86,7 +89,7 @@ namespace roseiceGameApp
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.label3.Text = "目標IP";
             // 
             // textBox1
             // 
@@ -116,7 +119,7 @@ namespace roseiceGameApp
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 8;
-            this.label4.Text = "label4";
+            this.label4.Text = "目標port";
             // 
             // label5
             // 
@@ -125,7 +128,7 @@ namespace roseiceGameApp
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 23);
             this.label5.TabIndex = 9;
-            this.label5.Text = "label5";
+            this.label5.Text = "傳送文字";
             // 
             // textBox4
             // 

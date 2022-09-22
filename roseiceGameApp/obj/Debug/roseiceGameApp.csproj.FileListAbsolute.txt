@@ -1,0 +1,10 @@
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\bin\Debug\roseiceGameApp.exe.config
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\bin\Debug\roseiceGameApp.exe
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\bin\Debug\roseiceGameApp.pdb
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\obj\Debug\roseiceGameApp.csproj.AssemblyReference.cache
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\obj\Debug\roseiceGameApp.Form1.resources
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\obj\Debug\roseiceGameApp.Properties.Resources.resources
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\obj\Debug\roseiceGameApp.csproj.GenerateResource.cache
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\obj\Debug\roseiceGameApp.csproj.CoreCompileInputs.cache
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\obj\Debug\roseiceGameApp.exe
+C:\Users\03\source\repos\roseiceGameApp\roseiceGameApp\obj\Debug\roseiceGameApp.pdb
