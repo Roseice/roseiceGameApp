@@ -21,7 +21,6 @@ namespace roseiceGameApp
         public Form1()
         {
             InitializeComponent();
-            this.Text = "IP:" + FindhostIP();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,6 +50,12 @@ namespace roseiceGameApp
             }
             //如果沒有找到IPv4就傳回空字串
             return ("");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //呼叫 FindhostIP方法找到本機ip
+            this.Text = "IP:" + FindhostIP();
         }
     }
 }
