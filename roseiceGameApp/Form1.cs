@@ -18,6 +18,7 @@ namespace roseiceGameApp
     {
         //宣告表單物件
         UdpClient U;//宣告物件來接收and傳輸UDP資料
+        Thread Thi;//監聽用執行續
         public Form1()
         {
             InitializeComponent();
@@ -30,7 +31,10 @@ namespace roseiceGameApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Control.CheckForIllegalCrossThreadCalls = false;//不攔截執行續相互access產生的錯誤
+            Thi = new Thread(Listen);//建立監聽執行續執行方法
+            Thi.Start();//啟動執行續
+            button1.Enabled = false;//防止重複點擊
         }
         //定義方法FindhostIP查找ip
         private string FindhostIP()
