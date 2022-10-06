@@ -16,8 +16,8 @@ namespace roseiceGameApp
 {
     public partial class Form1 : Form
     {
-        UdpClient U;
-        Thread THI;
+        //宣告表單物件
+        UdpClient U;//宣告物件來接收and傳輸UDP資料
         public Form1()
         {
             InitializeComponent();
@@ -38,9 +38,9 @@ namespace roseiceGameApp
             string hostIP = "";
             string hostName = Dns.GetHostName();//得到主機名稱
             //得到主機ip位置清單
-            IPAddress[]iPs= Dns.GetHostEntry(hostName).AddressList;
+            IPAddress[] iPs = Dns.GetHostEntry(hostName).AddressList;
             //使用foreach迴圈--比對是否有IPV4,如果有就回傳IPv4字串
-            foreach(IPAddress x in iPs)
+            foreach (IPAddress x in iPs)
             {
                 if (x.AddressFamily == AddressFamily.InterNetwork)
                 {
@@ -57,5 +57,20 @@ namespace roseiceGameApp
             //呼叫 FindhostIP方法找到本機ip
             this.Text = "IP:" + FindhostIP();
         }
+        //自訂義監聽方法接收並處理UDP傳輸進來的資料
+        private void Listen()
+        {
+            int portNum = int.Parse(textBox1.Text);//將port(textBox1)的文字轉為整數
+            U = new UdpClient(portNum);//建立UDP連線服務物件
+            int EP_portNum = int.Parse(textBox4.Text);//將port(textBox4)的文字轉為整數
+            IPEndPoint EP = new IPEndPoint(IPAddress.Parse(textBox3.Text), EP_portNum);
+            //使用迴圈處理接收資料
+            while(true)
+            { 
+            byte[] byteArrray = U.Receive(ref EP);//接收遠端資料
+            textBox2.Text = Encoding.Default.GetString(byteArrray);//將byte轉為字串
+            }
+        }
+
     }
 }
