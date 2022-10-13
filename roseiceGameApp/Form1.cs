@@ -28,7 +28,7 @@ namespace roseiceGameApp
         {
 
         }
-
+                                        
         private void button1_Click(object sender, EventArgs e)
         {
             Control.CheckForIllegalCrossThreadCalls = false;//不攔截執行續相互access產生的錯誤
@@ -76,5 +76,27 @@ namespace roseiceGameApp
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string remIP = textBox3.Text;//取得對方ip
+            int rempot = int.Parse(textBox4.Text);//取得對方port number
+            byte[] byteArray = Encoding.Default.GetBytes(textBox5.Text);//傳送字串轉成byte程列資料
+            UdpClient S = new UdpClient();//建立UDP連線服務實體
+            S.Send(byteArray, byteArray.Length, remIP, rempot);//傳輸資料到對方IP+port number通訊位置
+            S.Close();//關閉連線
+        }
+        private void Forml_formClosed(object sender,FormClosedEventArgs e)
+        {
+            try
+            {
+                Thi.Abort();//停止監聽執行續
+                U.Close();//關閉UDP連線
+
+            }
+            catch
+            {
+                //錯誤處理:忽略錯誤繼續執行
+            }
+        }
     }
 }
